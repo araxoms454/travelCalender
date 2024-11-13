@@ -54,7 +54,7 @@ function renderCalendar() {
             } else {
                 dayDiv.querySelector('.green').classList.add('hidden');
                 dayDiv.classList.remove('marked');
-                dayDiv.classList.remove(dot);
+                dayDiv.classList.removeChild(dot);
             }
 
             // Show festival details if there's a festival
