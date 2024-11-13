@@ -47,13 +47,14 @@ function renderCalendar() {
         // Mark date with green dot
         dayDiv.addEventListener('click', function() {
             if (!dayDiv.classList.contains('marked')) {
-                const dot = document.createElement('span');
+                dot = document.createElement('span');
                 dot.classList.add('festival-dot', 'green');
                 dayDiv.appendChild(dot);
                 dayDiv.classList.add('marked');
             } else {
                 dayDiv.querySelector('.green').classList.add('hidden');
                 dayDiv.classList.remove('marked');
+                dayDiv.classList.remove(dot);
             }
 
             // Show festival details if there's a festival
