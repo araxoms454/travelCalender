@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Festival Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Festival Calendar</h1>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth" class="button">Previous</button>
+                <h2 id="monthName"></h2>
+                <button id="nextMonth" class="button">Next</button>
+            </div>
+            <div class="calendar-body" id="calendarBody"></div>
+        </div>
+
+        <!-- Festival Info Box -->
+        <div id="festivalInfo" class="festival-info hidden">
+            <h3>Festivals this day</h3>
+            <p id="festivalName"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

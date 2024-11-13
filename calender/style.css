@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b0b6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #01070e;
+}
+
+.calendar {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #bf5ae0;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #75acd1;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    font-size: 14px;
+}
+
+.calendar-body div {
+    padding: 10px;
+    text-align: center;
+    background-color: #f6eafc;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.calendar-body div:hover {
+    cursor: pointer;
+    background-color: #f3beee;
+}
+
+.festival-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.hidden {
+    display: none;
+}
+
+.festival-info {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.festival-info:hover {
+    transform: scale(1.05);
+}
+
+.festival-info h3 {
+    margin-bottom: 10px;
+    color: #02080f;
+}
+
+.festival-info p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
